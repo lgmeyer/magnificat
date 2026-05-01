@@ -1,0 +1,161 @@
+<% content_for :title, "Magnificat - casa, fé e presentes afetivos" %>
+
+<main class="storefront">
+  <section class="announcement" aria-label="benefícios da loja">
+    <span>Frete grátis acima de R$ 499</span>
+    <span>5% OFF no Pix</span>
+    <span>Primeira troca grátis</span>
+  </section>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Magnificat">Magnificat</a>
+    <nav class="primary-nav" aria-label="Categorias principais">
+      <a href="#colecoes">Coleções</a>
+      <a href="#destaques">Mais amados</a>
+      <a href="#mesa">Mesa posta</a>
+      <a href="#historia">Nossa história</a>
+    </nav>
+    <div class="header-actions" aria-label="Ações">
+      <button type="button" aria-label="Buscar">⌕</button>
+      <button type="button" aria-label="Favoritos">♡</button>
+      <button type="button" aria-label="Carrinho">0</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Coleção Celebrações</p>
+      <h1>Presentes para uma casa que guarda fé, beleza e memória.</h1>
+      <p>Peças devocionais, joias delicadas e mesa posta para batismos, casamentos, primeira comunhão e pequenos rituais de todos os dias.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#destaques">Comprar destaques</a>
+        <a class="button secondary" href="#colecoes">Ver coleções</a>
+      </div>
+    </div>
+    <figure class="hero-media">
+      <img src="https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf?auto=format&fit=crop&w=1200&q=85" alt="Sala elegante com mesa de centro decorada em tons claros">
+      <figcaption>Curadoria para casa, oração e ocasiões especiais</figcaption>
+    </figure>
+  </section>
+
+  <section class="service-strip" aria-label="facilidades">
+    <article>
+      <strong>Entrega expressa</strong>
+      <span>Disponível para capitais selecionadas</span>
+    </article>
+    <article>
+      <strong>Parcele em até 6x</strong>
+      <span>Sem juros no cartão</span>
+    </article>
+    <article>
+      <strong>Cupom BEMVINDA</strong>
+      <span>8% OFF na primeira compra</span>
+    </article>
+  </section>
+
+  <section class="collection-grid" id="colecoes">
+    <div class="section-heading">
+      <p class="eyebrow">Navegue por intenção</p>
+      <h2>Coleções para presentear e receber</h2>
+    </div>
+    <a class="collection-card tall" href="#destaques">
+      <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=85" alt="Mesa posta com taças e louças claras">
+      <span>Mesa posta</span>
+    </a>
+    <a class="collection-card" href="#destaques">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85" alt="Joias douradas delicadas sobre tecido claro">
+      <span>Joias e escapulários</span>
+    </a>
+    <a class="collection-card" href="#destaques">
+      <img src="https://images.unsplash.com/photo-1523906630133-f6934a1ab2b9?auto=format&fit=crop&w=900&q=85" alt="Velas acesas em composição decorativa">
+      <span>Cantinho de oração</span>
+    </a>
+    <a class="collection-card wide" href="#destaques">
+      <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1000&q=85" alt="Ambiente de sala com decoração elegante">
+      <span>Casa abençoada</span>
+    </a>
+  </section>
+
+  <section class="product-section" id="destaques">
+    <div class="section-heading">
+      <p class="eyebrow">Mais amados</p>
+      <h2>Destaques da semana</h2>
+      <a href="#">Ver todos</a>
+    </div>
+
+    <div class="product-grid">
+      <% [
+        ["Medalhão Sagrada Família em caixa de acrílico", "R$ 495,00", "https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?auto=format&fit=crop&w=700&q=85"],
+        ["Terço em pedra natural com relicário dourado", "R$ 860,00", "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=700&q=85"],
+        ["Jogo americano linho floral verde, 4 peças", "R$ 468,00", "https://images.unsplash.com/photo-1603199506016-b9a594b593c0?auto=format&fit=crop&w=700&q=85"],
+        ["Vela canelada off white para altar doméstico", "R$ 58,00", "https://images.unsplash.com/photo-1602874801006-e26f343033a0?auto=format&fit=crop&w=700&q=85"]
+      ].each do |name, price, image| %>
+        <article class="product-card">
+          <a href="#">
+            <img src="<%= image %>" alt="<%= name %>">
+            <span class="badge">Novo</span>
+            <h3><%= name %></h3>
+            <p><%= price %></p>
+            <small>ou 6x sem juros</small>
+          </a>
+        </article>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="editorial-banner" id="mesa">
+    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1300&q=85" alt="Mesa arrumada com flores e taças em ambiente acolhedor">
+    <div>
+      <p class="eyebrow">Mesa, afeto e encontro</p>
+      <h2>Receber bem também pode ser um gesto de cuidado.</h2>
+      <p>Monte composições com louças, velas, prataria e pequenos símbolos de proteção para celebrações em família.</p>
+      <a class="button primary" href="#colecoes">Explorar mesa posta</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="section-heading">
+      <p class="eyebrow">Clientes</p>
+      <h2>Palavras que recebemos</h2>
+    </div>
+    <article>
+      <h3>“Um presente cheio de significado.”</h3>
+      <p>A peça chegou impecável, embalada com muito carinho. Foi perfeita para o batizado da minha afilhada.</p>
+      <span>Marina</span>
+    </article>
+    <article>
+      <h3>“A curadoria é delicada.”</h3>
+      <p>Comprei itens para montar uma mesa de almoço de domingo e tudo combinou sem parecer óbvio.</p>
+      <span>Helena</span>
+    </article>
+    <article>
+      <h3>“Mais bonito pessoalmente.”</h3>
+      <p>O terço tem acabamento lindo e veio com uma mensagem que deixou a compra ainda mais especial.</p>
+      <span>Clara</span>
+    </article>
+  </section>
+
+  <section class="story" id="historia">
+    <div>
+      <p class="eyebrow">Nossa história</p>
+      <h2>Magnificat nasceu para transformar objetos em lembranças de presença.</h2>
+      <p>Uma curadoria fictícia de artigos religiosos, casa e presentes afetivos, pensada para unir o apuro de uma loja boutique com a calma de quem escolhe cada peça para durar.</p>
+    </div>
+    <form class="newsletter">
+      <label for="email">Receba novidades e lançamentos</label>
+      <div>
+        <input id="email" type="email" placeholder="seu@email.com">
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <strong>Magnificat</strong>
+  <nav aria-label="Rodapé">
+    <a href="#">Atendimento</a>
+    <a href="#">Política de troca</a>
+    <a href="#">Instagram</a>
+  </nav>
+</footer>
