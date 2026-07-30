@@ -94,6 +94,14 @@ blockquote {
   text-transform: uppercase;
 }
 
+.brand--logo {
+  width: 180px;
+}
+
+.brand__logo {
+  height: auto;
+}
+
 .brand--dark {
   color: var(--ink);
 }
@@ -292,7 +300,7 @@ blockquote {
 }
 
 .editorial-hero__shade {
-  background: rgba(17, 29, 34, 0.56);
+  background: linear-gradient(90deg, rgba(20, 43, 61, 0.82) 0%, rgba(29, 57, 76, 0.62) 52%, rgba(37, 68, 84, 0.48) 100%);
 }
 
 .editorial-hero__content {
@@ -321,17 +329,6 @@ blockquote {
   margin-bottom: 34px;
   font-size: 0.9rem;
   line-height: 1.8;
-}
-
-.hero-note {
-  position: absolute;
-  z-index: 1;
-  right: 5vw;
-  bottom: 30px;
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 1rem;
-  font-style: italic;
 }
 
 .manifesto {
@@ -708,7 +705,7 @@ blockquote {
     padding: 0 24px;
   }
 
-  .site-header .brand span { font-size: 1.8rem; }
+  .site-header .brand--logo { width: 145px; }
 
   .menu-toggle {
     position: relative;
@@ -779,7 +776,6 @@ blockquote {
   .editorial-hero__content { padding-top: 60px; }
   .editorial-hero__content h1 { font-size: 4rem; line-height: 0.8; }
   .editorial-hero__content > p:not(.eyebrow) { max-width: 310px; }
-  .hero-note { right: 20px; bottom: 18px; font-size: 0.85rem; }
   .manifesto { padding: 100px 0 90px; }
   .manifesto h2, .section-heading h2, .artist-editorial h2, .editorial-contact h2 { font-size: 3.6rem; }
   .manifesto > div > p { margin-left: 0; }
