@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
@@ -40,16 +41,15 @@
       </section>
 
       <section class="manifesto editorial-shell reveal">
-        <p class="section-index">01 · Manifesto</p>
+        <p class="section-index manifesto__index-spacer" aria-hidden="true"></p>
         <div>
-          <h2>Alguns momentos são lindos.<br><em>Outros permanecem.</em></h2>
-          <p>Cada projeto nasce de uma história única. Entre pigmentos, papéis e pequenos gestos, criamos peças que refletem a personalidade de quem as recebe com elegância, delicadeza e significado.</p>
+          <h2>Alguns momentos são lindos.<br><em>Outros merecem ser inesquecíveis.</em></h2>
+          <p>Cada projeto nasce de uma história única. Entre pigmentos e papéis, criamos peças que refletem a sua personalidade e eternizam os momentos inesquecíveis.</p>
         </div>
       </section>
 
       <section class="services editorial-shell" aria-labelledby="services-title">
         <div class="section-heading reveal">
-          <p class="section-index">02 · O que fazemos</p>
           <h2 id="services-title">Do primeiro traço<br>ao último detalhe.</h2>
         </div>
         <div class="service-list">
@@ -61,12 +61,12 @@
           <article class="service-item reveal">
             <span>02</span>
             <h3>Ilustrações sob encomenda</h3>
-            <p>Aquarelas exclusivas de lugares, pessoas, símbolos e memórias importantes para você.</p>
+            <p>Aquarelas autorais com foco em arte religiosa e delicada.</p>
           </article>
           <article class="service-item reveal">
             <span>03</span>
             <h3>Obras e reproduções</h3>
-            <p>Uma seleção de ilustrações autorais em tiragens cuidadosas para levar arte e fé à sua casa.</p>
+            <p>Uma seleção de ilustrações autorais em tiragens exclusivas para levar arte e fé à sua casa.</p>
           </article>
         </div>
       </section>
@@ -142,7 +142,9 @@
     </main>
 
     <footer class="site-footer editorial-shell">
-      <a class="brand brand--dark" href="#inicio"><span>Magnificat</span><small>Paper Co.</small></a>
+      <a class="footer-brand-logo" href="#inicio" aria-label="Magnificat Paper & Co. — início">
+        <img src="assets/logo-magnificat-original.jpeg" alt="Magnificat Paper & Co." width="1600" height="1600">
+      </a>
       <p>Aquarela · Papelaria · Arte devocional</p>
       <p>© 2026 Magnificat Paper Co.</p>
     </footer>
