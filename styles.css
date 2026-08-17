@@ -190,6 +190,10 @@ blockquote {
   position: relative;
 }
 
+.site-nav a[href="#atelie"] {
+  white-space: nowrap;
+}
+
 .site-nav a:not(.nav-cta)::after {
   position: absolute;
   right: 0;
@@ -755,16 +759,22 @@ blockquote {
     display: flex;
     visibility: hidden;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 28px;
+    padding: 0 24px;
     opacity: 0;
     color: #f4ece7;
     background: #223a48;
     font-family: var(--serif);
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-align: right;
     text-transform: none;
     transition: opacity 180ms ease, visibility 180ms ease;
+  }
+
+  .site-nav a {
+    max-width: 220px;
   }
 
   .menu-open .site-nav {
